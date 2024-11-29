@@ -1,72 +1,188 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<Events><Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Sysmon' Guid='{5770385f-c22a-43e0-bf4c-06f5698ffbd9}'/><EventID>1</EventID><Version>5</Version><Level>4</Level><Task>1</Task><Opcode>0</Opcode><Keywords>0x8000000000000000</Keywords><TimeCreated SystemTime='2024-11-29T18:31:49.8910384Z'/><EventRecordID>111554</EventRecordID><Correlation/><Execution ProcessID='3432' ThreadID='4952'/><Channel>Microsoft-Windows-Sysmon/Operational</Channel><Computer>stompwks002.stomp.in</Computer><Security UserID='S-1-5-18'/></System><EventData><Data Name='RuleName'>technique_id=T1059,technique_name=Command-Line Interface</Data><Data Name='UtcTime'>2024-11-29 18:31:49.890</Data><Data Name='ProcessGuid'>{159466bb-0895-674a-1c03-000000001700}</Data><Data Name='ProcessId'>328</Data><Data Name='Image'>C:\Windows\System32\cmd.exe</Data><Data Name='FileVersion'>10.0.19041.4355 (WinBuild.160101.0800)</Data><Data Name='Description'>Windows Command Processor</Data><Data Name='Product'>Microsoft® Windows® Operating System</Data><Data Name='Company'>Microsoft Corporation</Data><Data Name='OriginalFileName'>Cmd.Exe</Data><Data Name='CommandLine'>cmd</Data><Data Name='CurrentDirectory'>C:\Windows\system32\</Data><Data Name='User'>NT AUTHORITY\SYSTEM</Data><Data Name='LogonGuid'>{159466bb-0327-674a-e703-000000000000}</Data><Data Name='LogonId'>0x3e7</Data><Data Name='TerminalSessionId'>0</Data><Data Name='IntegrityLevel'>System</Data><Data Name='Hashes'>SHA1=DF79C86FDD11B9CCB89148458E509F879C72566C,MD5=2B40C98ED0F7A1D3B091A3E8353132DC,SHA256=BADF4752413CB0CBDC03FB95820CA167F0CDC63B597CCDB5EF43111180E088B0,IMPHASH=272245E2988E1E430500B852C4FB5E18</Data><Data Name='ParentProcessGuid'>{159466bb-0895-674a-1b03-000000001700}</Data><Data Name='ParentProcessId'>7996</Data><Data Name='ParentImage'>C:\Users\ethan\Downloads\PrintSpoofer.exe</Data><Data Name='ParentCommandLine'>PrintSpoofer.exe  -i -c cmd</Data><Data Name='ParentUser'>STOMP\Administrator</Data></EventData><RenderingInfo Culture='en-US'><Message>Process Create:
-RuleName: technique_id=T1059,technique_name=Command-Line Interface
-UtcTime: 2024-11-29 18:31:49.890
-ProcessGuid: {159466bb-0895-674a-1c03-000000001700}
-ProcessId: 328
-Image: C:\Windows\System32\cmd.exe
-FileVersion: 10.0.19041.4355 (WinBuild.160101.0800)
-Description: Windows Command Processor
-Product: Microsoft® Windows® Operating System
-Company: Microsoft Corporation
-OriginalFileName: Cmd.Exe
-CommandLine: cmd
-CurrentDirectory: C:\Windows\system32\
-User: NT AUTHORITY\SYSTEM
-LogonGuid: {159466bb-0327-674a-e703-000000000000}
-LogonId: 0x3E7
-TerminalSessionId: 0
-IntegrityLevel: System
-Hashes: SHA1=DF79C86FDD11B9CCB89148458E509F879C72566C,MD5=2B40C98ED0F7A1D3B091A3E8353132DC,SHA256=BADF4752413CB0CBDC03FB95820CA167F0CDC63B597CCDB5EF43111180E088B0,IMPHASH=272245E2988E1E430500B852C4FB5E18
-ParentProcessGuid: {159466bb-0895-674a-1b03-000000001700}
-ParentProcessId: 7996
-ParentImage: C:\Users\ethan\Downloads\PrintSpoofer.exe
-ParentCommandLine: PrintSpoofer.exe  -i -c cmd
-ParentUser: STOMP\Administrator</Message><Level>Information</Level><Task>Process Create (rule: ProcessCreate)</Task><Opcode>Info</Opcode><Channel></Channel><Provider></Provider><Keywords></Keywords></RenderingInfo></Event><Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Sysmon' Guid='{5770385f-c22a-43e0-bf4c-06f5698ffbd9}'/><EventID>17</EventID><Version>1</Version><Level>4</Level><Task>17</Task><Opcode>0</Opcode><Keywords>0x8000000000000000</Keywords><TimeCreated SystemTime='2024-11-29T18:31:49.8859107Z'/><EventRecordID>111553</EventRecordID><Correlation/><Execution ProcessID='3432' ThreadID='4952'/><Channel>Microsoft-Windows-Sysmon/Operational</Channel><Computer>stompwks002.stomp.in</Computer><Security UserID='S-1-5-18'/></System><EventData><Data Name='RuleName'>-</Data><Data Name='EventType'>CreatePipe</Data><Data Name='UtcTime'>2024-11-29 18:31:49.876</Data><Data Name='ProcessGuid'>{159466bb-0895-674a-1b03-000000001700}</Data><Data Name='ProcessId'>7996</Data><Data Name='PipeName'>\71448284-b04a-4bcc-ad12-22a85f12802d\pipe\spoolss</Data><Data Name='Image'>c:\Users\ethan\Downloads\PrintSpoofer.exe</Data><Data Name='User'>STOMP\Administrator</Data></EventData><RenderingInfo Culture='en-US'><Message>Pipe Created:
-RuleName: -
-EventType: CreatePipe
-UtcTime: 2024-11-29 18:31:49.876
-ProcessGuid: {159466bb-0895-674a-1b03-000000001700}
-ProcessId: 7996
-PipeName: \71448284-b04a-4bcc-ad12-22a85f12802d\pipe\spoolss
-Image: c:\Users\ethan\Downloads\PrintSpoofer.exe
-User: STOMP\Administrator</Message><Level>Information</Level><Task>Pipe Created (rule: PipeEvent)</Task><Opcode>Info</Opcode><Channel></Channel><Provider></Provider><Keywords></Keywords></RenderingInfo></Event><Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Sysmon' Guid='{5770385f-c22a-43e0-bf4c-06f5698ffbd9}'/><EventID>7</EventID><Version>3</Version><Level>4</Level><Task>7</Task><Opcode>0</Opcode><Keywords>0x8000000000000000</Keywords><TimeCreated SystemTime='2024-11-29T18:31:49.8730092Z'/><EventRecordID>111552</EventRecordID><Correlation/><Execution ProcessID='3432' ThreadID='4952'/><Channel>Microsoft-Windows-Sysmon/Operational</Channel><Computer>stompwks002.stomp.in</Computer><Security UserID='S-1-5-18'/></System><EventData><Data Name='RuleName'>technique_id=T1574.002,technique_name=DLL Side-Loading</Data><Data Name='UtcTime'>2024-11-29 18:31:49.869</Data><Data Name='ProcessGuid'>{159466bb-0895-674a-1b03-000000001700}</Data><Data Name='ProcessId'>7996</Data><Data Name='Image'>C:\Users\ethan\Downloads\PrintSpoofer.exe</Data><Data Name='ImageLoaded'>C:\Users\ethan\Downloads\PrintSpoofer.exe</Data><Data Name='FileVersion'>-</Data><Data Name='Description'>-</Data><Data Name='Product'>-</Data><Data Name='Company'>-</Data><Data Name='OriginalFileName'>-</Data><Data Name='Hashes'>SHA1=F6F62F736A985BA7ACADA2821E279294404EBA68,MD5=755AF01D6F1C793D28275EC8B914687C,SHA256=9D6F82C75B90CFAD4907CF4EB8EC1ED57B21725A24257F444AF46D9C486BA0CB,IMPHASH=545A81240793F9CA97306FA5B3AD76DF</Data><Data Name='Signed'>false</Data><Data Name='Signature'>-</Data><Data Name='SignatureStatus'>Unavailable</Data><Data Name='User'>STOMP\Administrator</Data></EventData><RenderingInfo Culture='en-US'><Message>Image loaded:
-RuleName: technique_id=T1574.002,technique_name=DLL Side-Loading
-UtcTime: 2024-11-29 18:31:49.869
-ProcessGuid: {159466bb-0895-674a-1b03-000000001700}
-ProcessId: 7996
-Image: C:\Users\ethan\Downloads\PrintSpoofer.exe
-ImageLoaded: C:\Users\ethan\Downloads\PrintSpoofer.exe
-FileVersion: -
-Description: -
-Product: -
-Company: -
-OriginalFileName: -
-Hashes: SHA1=F6F62F736A985BA7ACADA2821E279294404EBA68,MD5=755AF01D6F1C793D28275EC8B914687C,SHA256=9D6F82C75B90CFAD4907CF4EB8EC1ED57B21725A24257F444AF46D9C486BA0CB,IMPHASH=545A81240793F9CA97306FA5B3AD76DF
-Signed: false
-Signature: -
-SignatureStatus: Unavailable
-User: STOMP\Administrator</Message><Level>Information</Level><Task>Image loaded (rule: ImageLoad)</Task><Opcode>Info</Opcode><Channel></Channel><Provider></Provider><Keywords></Keywords></RenderingInfo></Event><Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Sysmon' Guid='{5770385f-c22a-43e0-bf4c-06f5698ffbd9}'/><EventID>1</EventID><Version>5</Version><Level>4</Level><Task>1</Task><Opcode>0</Opcode><Keywords>0x8000000000000000</Keywords><TimeCreated SystemTime='2024-11-29T18:31:49.8724042Z'/><EventRecordID>111551</EventRecordID><Correlation/><Execution ProcessID='3432' ThreadID='4952'/><Channel>Microsoft-Windows-Sysmon/Operational</Channel><Computer>stompwks002.stomp.in</Computer><Security UserID='S-1-5-18'/></System><EventData><Data Name='RuleName'>technique_id=T1036,technique_name=Masquerading</Data><Data Name='UtcTime'>2024-11-29 18:31:49.871</Data><Data Name='ProcessGuid'>{159466bb-0895-674a-1b03-000000001700}</Data><Data Name='ProcessId'>7996</Data><Data Name='Image'>C:\Users\ethan\Downloads\PrintSpoofer.exe</Data><Data Name='FileVersion'>-</Data><Data Name='Description'>-</Data><Data Name='Product'>-</Data><Data Name='Company'>-</Data><Data Name='OriginalFileName'>-</Data><Data Name='CommandLine'>PrintSpoofer.exe  -i -c cmd</Data><Data Name='CurrentDirectory'>c:\Users\ethan\Downloads\</Data><Data Name='User'>STOMP\Administrator</Data><Data Name='LogonGuid'>{159466bb-077e-674a-9192-e40000000000}</Data><Data Name='LogonId'>0xe49291</Data><Data Name='TerminalSessionId'>1</Data><Data Name='IntegrityLevel'>High</Data><Data Name='Hashes'>SHA1=F6F62F736A985BA7ACADA2821E279294404EBA68,MD5=755AF01D6F1C793D28275EC8B914687C,SHA256=9D6F82C75B90CFAD4907CF4EB8EC1ED57B21725A24257F444AF46D9C486BA0CB,IMPHASH=545A81240793F9CA97306FA5B3AD76DF</Data><Data Name='ParentProcessGuid'>{00000000-0000-0000-0000-000000000000}</Data><Data Name='ParentProcessId'>8752</Data><Data Name='ParentImage'>-</Data><Data Name='ParentCommandLine'>-</Data><Data Name='ParentUser'>-</Data></EventData><RenderingInfo Culture='en-US'><Message>Process Create:
-RuleName: technique_id=T1036,technique_name=Masquerading
-UtcTime: 2024-11-29 18:31:49.871
-ProcessGuid: {159466bb-0895-674a-1b03-000000001700}
-ProcessId: 7996
-Image: C:\Users\ethan\Downloads\PrintSpoofer.exe
-FileVersion: -
-Description: -
-Product: -
-Company: -
-OriginalFileName: -
-CommandLine: PrintSpoofer.exe  -i -c cmd
-CurrentDirectory: c:\Users\ethan\Downloads\
-User: STOMP\Administrator
-LogonGuid: {159466bb-077e-674a-9192-e40000000000}
-LogonId: 0xE49291
-TerminalSessionId: 1
-IntegrityLevel: High
-Hashes: SHA1=F6F62F736A985BA7ACADA2821E279294404EBA68,MD5=755AF01D6F1C793D28275EC8B914687C,SHA256=9D6F82C75B90CFAD4907CF4EB8EC1ED57B21725A24257F444AF46D9C486BA0CB,IMPHASH=545A81240793F9CA97306FA5B3AD76DF
-ParentProcessGuid: {00000000-0000-0000-0000-000000000000}
-ParentProcessId: 8752
-ParentImage: -
-ParentCommandLine: -
-ParentUser: -</Message><Level>Information</Level><Task>Process Create (rule: ProcessCreate)</Task><Opcode>Info</Opcode><Channel></Channel><Provider></Provider><Keywords></Keywords></RenderingInfo></Event></Events>
+<Events>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+<System>
+<Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+<EventID>1</EventID>
+<Version>5</Version>
+<Level>4</Level>
+<Task>1</Task>
+<Opcode>0</Opcode>
+<Keywords>0x8000000000000000</Keywords>
+<TimeCreated SystemTime="2024-11-29T18:31:49.8910384Z"/>
+<EventRecordID>111554</EventRecordID>
+<Correlation/>
+<Execution ProcessID="3432" ThreadID="4952"/>
+<Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+<Computer>stompwks002.stomp.in</Computer>
+<Security UserID="S-1-5-18"/>
+</System>
+<EventData>
+<Data Name="RuleName">technique_id=T1059,technique_name=Command-Line Interface</Data>
+<Data Name="UtcTime">2024-11-29 18:31:49.890</Data>
+<Data Name="ProcessGuid">{159466bb-0895-674a-1c03-000000001700}</Data>
+<Data Name="ProcessId">328</Data>
+<Data Name="Image">C:\Windows\System32\cmd.exe</Data>
+<Data Name="FileVersion">10.0.19041.4355 (WinBuild.160101.0800)</Data>
+<Data Name="Description">Windows Command Processor</Data>
+<Data Name="Product">Microsoft® Windows® Operating System</Data>
+<Data Name="Company">Microsoft Corporation</Data>
+<Data Name="OriginalFileName">Cmd.Exe</Data>
+<Data Name="CommandLine">cmd</Data>
+<Data Name="CurrentDirectory">C:\Windows\system32\</Data>
+<Data Name="User">NT AUTHORITY\SYSTEM</Data>
+<Data Name="LogonGuid">{159466bb-0327-674a-e703-000000000000}</Data>
+<Data Name="LogonId">0x3e7</Data>
+<Data Name="TerminalSessionId">0</Data>
+<Data Name="IntegrityLevel">System</Data>
+<Data Name="Hashes">SHA1=DF79C86FDD11B9CCB89148458E509F879C72566C,MD5=2B40C98ED0F7A1D3B091A3E8353132DC,SHA256=BADF4752413CB0CBDC03FB95820CA167F0CDC63B597CCDB5EF43111180E088B0,IMPHASH=272245E2988E1E430500B852C4FB5E18</Data>
+<Data Name="ParentProcessGuid">{159466bb-0895-674a-1b03-000000001700}</Data>
+<Data Name="ParentProcessId">7996</Data>
+<Data Name="ParentImage">C:\Users\ethan\Downloads\PrintSpoofer.exe</Data>
+<Data Name="ParentCommandLine">PrintSpoofer.exe -i -c cmd</Data>
+<Data Name="ParentUser">STOMP\Administrator</Data>
+</EventData>
+<RenderingInfo Culture="en-US">
+<Message>Process Create: RuleName: technique_id=T1059,technique_name=Command-Line Interface UtcTime: 2024-11-29 18:31:49.890 ProcessGuid: {159466bb-0895-674a-1c03-000000001700} ProcessId: 328 Image: C:\Windows\System32\cmd.exe FileVersion: 10.0.19041.4355 (WinBuild.160101.0800) Description: Windows Command Processor Product: Microsoft® Windows® Operating System Company: Microsoft Corporation OriginalFileName: Cmd.Exe CommandLine: cmd CurrentDirectory: C:\Windows\system32\ User: NT AUTHORITY\SYSTEM LogonGuid: {159466bb-0327-674a-e703-000000000000} LogonId: 0x3E7 TerminalSessionId: 0 IntegrityLevel: System Hashes: SHA1=DF79C86FDD11B9CCB89148458E509F879C72566C,MD5=2B40C98ED0F7A1D3B091A3E8353132DC,SHA256=BADF4752413CB0CBDC03FB95820CA167F0CDC63B597CCDB5EF43111180E088B0,IMPHASH=272245E2988E1E430500B852C4FB5E18 ParentProcessGuid: {159466bb-0895-674a-1b03-000000001700} ParentProcessId: 7996 ParentImage: C:\Users\ethan\Downloads\PrintSpoofer.exe ParentCommandLine: PrintSpoofer.exe -i -c cmd ParentUser: STOMP\Administrator</Message>
+<Level>Information</Level>
+<Task>Process Create (rule: ProcessCreate)</Task>
+<Opcode>Info</Opcode>
+<Channel/>
+<Provider/>
+<Keywords/>
+</RenderingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+<System>
+<Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+<EventID>17</EventID>
+<Version>1</Version>
+<Level>4</Level>
+<Task>17</Task>
+<Opcode>0</Opcode>
+<Keywords>0x8000000000000000</Keywords>
+<TimeCreated SystemTime="2024-11-29T18:31:49.8859107Z"/>
+<EventRecordID>111553</EventRecordID>
+<Correlation/>
+<Execution ProcessID="3432" ThreadID="4952"/>
+<Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+<Computer>stompwks002.stomp.in</Computer>
+<Security UserID="S-1-5-18"/>
+</System>
+<EventData>
+<Data Name="RuleName">-</Data>
+<Data Name="EventType">CreatePipe</Data>
+<Data Name="UtcTime">2024-11-29 18:31:49.876</Data>
+<Data Name="ProcessGuid">{159466bb-0895-674a-1b03-000000001700}</Data>
+<Data Name="ProcessId">7996</Data>
+<Data Name="PipeName">\71448284-b04a-4bcc-ad12-22a85f12802d\pipe\spoolss</Data>
+<Data Name="Image">c:\Users\ethan\Downloads\PrintSpoofer.exe</Data>
+<Data Name="User">STOMP\Administrator</Data>
+</EventData>
+<RenderingInfo Culture="en-US">
+<Message>Pipe Created: RuleName: - EventType: CreatePipe UtcTime: 2024-11-29 18:31:49.876 ProcessGuid: {159466bb-0895-674a-1b03-000000001700} ProcessId: 7996 PipeName: \71448284-b04a-4bcc-ad12-22a85f12802d\pipe\spoolss Image: c:\Users\ethan\Downloads\PrintSpoofer.exe User: STOMP\Administrator</Message>
+<Level>Information</Level>
+<Task>Pipe Created (rule: PipeEvent)</Task>
+<Opcode>Info</Opcode>
+<Channel/>
+<Provider/>
+<Keywords/>
+</RenderingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+<System>
+<Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+<EventID>7</EventID>
+<Version>3</Version>
+<Level>4</Level>
+<Task>7</Task>
+<Opcode>0</Opcode>
+<Keywords>0x8000000000000000</Keywords>
+<TimeCreated SystemTime="2024-11-29T18:31:49.8730092Z"/>
+<EventRecordID>111552</EventRecordID>
+<Correlation/>
+<Execution ProcessID="3432" ThreadID="4952"/>
+<Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+<Computer>stompwks002.stomp.in</Computer>
+<Security UserID="S-1-5-18"/>
+</System>
+<EventData>
+<Data Name="RuleName">technique_id=T1574.002,technique_name=DLL Side-Loading</Data>
+<Data Name="UtcTime">2024-11-29 18:31:49.869</Data>
+<Data Name="ProcessGuid">{159466bb-0895-674a-1b03-000000001700}</Data>
+<Data Name="ProcessId">7996</Data>
+<Data Name="Image">C:\Users\ethan\Downloads\PrintSpoofer.exe</Data>
+<Data Name="ImageLoaded">C:\Users\ethan\Downloads\PrintSpoofer.exe</Data>
+<Data Name="FileVersion">-</Data>
+<Data Name="Description">-</Data>
+<Data Name="Product">-</Data>
+<Data Name="Company">-</Data>
+<Data Name="OriginalFileName">-</Data>
+<Data Name="Hashes">SHA1=F6F62F736A985BA7ACADA2821E279294404EBA68,MD5=755AF01D6F1C793D28275EC8B914687C,SHA256=9D6F82C75B90CFAD4907CF4EB8EC1ED57B21725A24257F444AF46D9C486BA0CB,IMPHASH=545A81240793F9CA97306FA5B3AD76DF</Data>
+<Data Name="Signed">false</Data>
+<Data Name="Signature">-</Data>
+<Data Name="SignatureStatus">Unavailable</Data>
+<Data Name="User">STOMP\Administrator</Data>
+</EventData>
+<RenderingInfo Culture="en-US">
+<Message>Image loaded: RuleName: technique_id=T1574.002,technique_name=DLL Side-Loading UtcTime: 2024-11-29 18:31:49.869 ProcessGuid: {159466bb-0895-674a-1b03-000000001700} ProcessId: 7996 Image: C:\Users\ethan\Downloads\PrintSpoofer.exe ImageLoaded: C:\Users\ethan\Downloads\PrintSpoofer.exe FileVersion: - Description: - Product: - Company: - OriginalFileName: - Hashes: SHA1=F6F62F736A985BA7ACADA2821E279294404EBA68,MD5=755AF01D6F1C793D28275EC8B914687C,SHA256=9D6F82C75B90CFAD4907CF4EB8EC1ED57B21725A24257F444AF46D9C486BA0CB,IMPHASH=545A81240793F9CA97306FA5B3AD76DF Signed: false Signature: - SignatureStatus: Unavailable User: STOMP\Administrator</Message>
+<Level>Information</Level>
+<Task>Image loaded (rule: ImageLoad)</Task>
+<Opcode>Info</Opcode>
+<Channel/>
+<Provider/>
+<Keywords/>
+</RenderingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+<System>
+<Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+<EventID>1</EventID>
+<Version>5</Version>
+<Level>4</Level>
+<Task>1</Task>
+<Opcode>0</Opcode>
+<Keywords>0x8000000000000000</Keywords>
+<TimeCreated SystemTime="2024-11-29T18:31:49.8724042Z"/>
+<EventRecordID>111551</EventRecordID>
+<Correlation/>
+<Execution ProcessID="3432" ThreadID="4952"/>
+<Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+<Computer>stompwks002.stomp.in</Computer>
+<Security UserID="S-1-5-18"/>
+</System>
+<EventData>
+<Data Name="RuleName">technique_id=T1036,technique_name=Masquerading</Data>
+<Data Name="UtcTime">2024-11-29 18:31:49.871</Data>
+<Data Name="ProcessGuid">{159466bb-0895-674a-1b03-000000001700}</Data>
+<Data Name="ProcessId">7996</Data>
+<Data Name="Image">C:\Users\ethan\Downloads\PrintSpoofer.exe</Data>
+<Data Name="FileVersion">-</Data>
+<Data Name="Description">-</Data>
+<Data Name="Product">-</Data>
+<Data Name="Company">-</Data>
+<Data Name="OriginalFileName">-</Data>
+<Data Name="CommandLine">PrintSpoofer.exe -i -c cmd</Data>
+<Data Name="CurrentDirectory">c:\Users\ethan\Downloads\</Data>
+<Data Name="User">STOMP\Administrator</Data>
+<Data Name="LogonGuid">{159466bb-077e-674a-9192-e40000000000}</Data>
+<Data Name="LogonId">0xe49291</Data>
+<Data Name="TerminalSessionId">1</Data>
+<Data Name="IntegrityLevel">High</Data>
+<Data Name="Hashes">SHA1=F6F62F736A985BA7ACADA2821E279294404EBA68,MD5=755AF01D6F1C793D28275EC8B914687C,SHA256=9D6F82C75B90CFAD4907CF4EB8EC1ED57B21725A24257F444AF46D9C486BA0CB,IMPHASH=545A81240793F9CA97306FA5B3AD76DF</Data>
+<Data Name="ParentProcessGuid">{00000000-0000-0000-0000-000000000000}</Data>
+<Data Name="ParentProcessId">8752</Data>
+<Data Name="ParentImage">-</Data>
+<Data Name="ParentCommandLine">-</Data>
+<Data Name="ParentUser">-</Data>
+</EventData>
+<RenderingInfo Culture="en-US">
+<Message>Process Create: RuleName: technique_id=T1036,technique_name=Masquerading UtcTime: 2024-11-29 18:31:49.871 ProcessGuid: {159466bb-0895-674a-1b03-000000001700} ProcessId: 7996 Image: C:\Users\ethan\Downloads\PrintSpoofer.exe FileVersion: - Description: - Product: - Company: - OriginalFileName: - CommandLine: PrintSpoofer.exe -i -c cmd CurrentDirectory: c:\Users\ethan\Downloads\ User: STOMP\Administrator LogonGuid: {159466bb-077e-674a-9192-e40000000000} LogonId: 0xE49291 TerminalSessionId: 1 IntegrityLevel: High Hashes: SHA1=F6F62F736A985BA7ACADA2821E279294404EBA68,MD5=755AF01D6F1C793D28275EC8B914687C,SHA256=9D6F82C75B90CFAD4907CF4EB8EC1ED57B21725A24257F444AF46D9C486BA0CB,IMPHASH=545A81240793F9CA97306FA5B3AD76DF ParentProcessGuid: {00000000-0000-0000-0000-000000000000} ParentProcessId: 8752 ParentImage: - ParentCommandLine: - ParentUser: -</Message>
+<Level>Information</Level>
+<Task>Process Create (rule: ProcessCreate)</Task>
+<Opcode>Info</Opcode>
+<Channel/>
+<Provider/>
+<Keywords/>
+</RenderingInfo>
+</Event>
+</Events>
